@@ -61,10 +61,8 @@ async function load_data(path) {
             .on('end', () => {
                 console.log(`${path} CSV file successfully processed`);
                 if(rates.length == 0){
-                    console.log('length of null')
                     resolve('00.00.0000')
                 }else{
-                    console.log(rates)
                     resolve(rates[rates.length - 1][0])
                 }
             })
