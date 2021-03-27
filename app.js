@@ -7,7 +7,7 @@ require('dotenv').config()
 
 if(process.env.SERVER_MODE=='true'){
 
-  var job = new CronJob('*/5 * * * *', function() {
+  var job = new CronJob('0 */12 * * *', function() {
     console.log('Job will be started at ' + new Date().toISOString());
     main()
   });
