@@ -52,7 +52,8 @@ async function get_course(fonds) {
 
 
 function puppeteer_mod (){
-  let config = {
+
+    let config = {
     ignoreHTTPSErrors: false,
     headless: true,
     slowMo: 150,
