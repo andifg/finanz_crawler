@@ -5,3 +5,4 @@ services:
     restart: always
     volumes:
       - ./logs:/app/logs
+      - ./data.yml:/app/data.yml
